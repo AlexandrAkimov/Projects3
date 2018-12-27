@@ -1,0 +1,118 @@
+.catalog_content{
+	width: 100%;
+	margin-top: 50px;
+}
+.catalog_content_line{
+	width: 100%;
+	margin-bottom: 50px;
+}
+.catalog_content_block{
+	width: 290px;
+	float: left;
+	margin-left: 5px;
+	margin-right: 5px;
+	background: rgba(2,2,2,0.6);
+}
+.catalog_image{
+	width: 290px;
+	height: 160px;
+	vertical-align: middle;
+	position: relative;
+}
+.catalog_content_pic{
+	width: 100%;
+	height: 100%;
+	opacity: 0.7;
+	object-fit: cover;
+}
+.catalog_content_name{
+	padding: 0 10px;
+	margin: 0;
+	color: #eee;
+	line-height: 100%;
+}
+.catalog_content_menu{
+	padding: 10px;
+	width: 266px;
+	margin: 0;
+}
+.catalog_content_price{
+	margin: 0;
+	padding: 10px;
+	color: #eee;
+}
+.name_bg{
+	position: absolute;
+ 	bottom: 0;
+	background: rgba(0, 0, 0, 0.72);
+	width: 100%;
+	padding: 20px 0;
+}
+.catalog_content_menu a{
+	color: #fff;
+	padding: 20px;
+	display: block;
+	transition: 0.5s all;
+	width: 100%;
+}
+.catalog_content_menuDrop{
+	background: rgba(0,0,0,0.85);
+	position: absolute;
+	opacity: 0;
+	transition: 0.5s opacity;
+	width: 290px;
+	left: -12px;
+	top: -9999px;
+	z-index: 5;
+}
+.catalog_content_list{
+	width: 100%;
+	border: 2px solid #eee;
+	border-radius: 5px;
+	position: relative;
+}
+.catalog_content_list:hover .catalog_content_menuDrop{
+	opacity: 1;
+	top: 74px;
+	border-top: 20px solid transparent;
+}
+
+.menuDrop_link{
+	padding: 5px;
+}
+p{
+	margin: 0;
+}
+.catalog_content_list::after{
+	content: " ";
+	position: absolute;
+	border: 7px solid;
+	border-color: #eee transparent transparent transparent;
+	top: 1.8em;
+	right: 0.7em;
+	transition: 0.5s;
+}
+.catalog_content_list:hover::after{
+	transform: scaleY(-1);
+}
+.back_catalog{
+	position: absolute;
+	display: block;
+	width: 200px;
+	height: 60px;
+	background: rgba(0,0,0,0.8);
+	border-radius: 5px;
+	text-align: center;
+	text-decoration: none;
+	color: #eee;
+	text-transform: uppercase;
+	padding-top: 35px;
+	padding-bottom: 0;
+	left: 500px;
+}
+.nav_catalog_bikes{
+	width: 50%;
+}
+.nav_catalog_akses{
+	width: 25%;
+}

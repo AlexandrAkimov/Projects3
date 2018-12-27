@@ -1,0 +1,40 @@
+.main_contacts_content{
+	background: rgba(0,0,0,0.8);
+	height: 300px;
+	border-radius: 5px;
+}
+.main_contacts_address{
+	padding-top: 5px;
+	margin-left: 30px;
+	margin-top: 20px;
+	border-left: 2px solid #fff;
+	padding-left: 10px;
+}
+.contacts_address_title,
+.contacts_address_text,
+.contacts_connect_text{
+	color: #fff;
+	font-family: Helvetica;
+	margin: 0;
+}
+.main_contacts_connect{
+	margin-top: 30px;
+	margin-left: 30px;
+	border-left: 2px solid #fff;
+	padding-left: 10px;
+}
+.soc_items{
+	background: rgba(0,0,0,0.8);
+	margin-top: 50px;
+	border-radius: 5px;
+}
+.soc_block{
+	float: left;
+	width: 20%;
+	padding: 30px;
+	text-align: center;
+}
+.soc_icon{
+	width: 100px;
+	border-radius: 50%;
+}

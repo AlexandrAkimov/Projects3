@@ -1,0 +1,72 @@
+.main_catalog{
+	margin-top: 100px;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+/* Внешний вид меню каталога*/
+.main_catalog{
+	width: 400px;
+}
+.main_catalog_menu a{
+	background: #3d3d3d;
+	opacity: .7;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 20px;
+	display: block;
+	border-bottom: 1px solid #666;
+	transition: 0.5s all;
+}
+.main_catalog_menu a:hover{
+	background: #666;
+	padding: 20px 0 20px 20px;
+}
+.main_catalog_menu li:first-child a,
+.main_catalog_menu .main_catalog_dropMenu li:first-child a{
+	border-radius: 3px 3px 0 0;
+}
+.main_catalog_menu li:last-child a,
+.main_catalog_menu .main_catalog_dropMenu li:last-child a{
+	border-radius: 0 0 3px 3px;
+	border-bottom: 0;
+}
+.main_catalog_menu .main_catalog_dropMenu li a{
+	border-radius: 0;
+	border-bottom: 1px solid #666;
+}
+/*Всплывающее меню каталога*/
+.main_catalog_list{
+	position: relative;
+}
+.main_catalog_dropMenu{
+	position: absolute;
+	width: 100%;
+	left: 100%;
+	top: -9999em;
+	opacity: 0;
+	border-left: 10px solid transparent;
+	transition: 0.5s opacity;
+}
+.main_catalog_list:hover .main_catalog_dropMenu{
+	opacity: 1;
+	top: 0;
+}
+/*Иконки-стрелки всплывающего меню*/
+.main_catalog_list::after{
+	content: " ";
+	position: absolute;
+	border: 7px solid;
+	border-color: transparent transparent transparent #eee;
+	top: 1.35em;
+	right: 0.7em;
+	transition: 0.5s;
+}
+.main_catalog_list:hover::after{
+	transform: scaleX(-1);
+}
